@@ -1,0 +1,129 @@
+/* Layout  */
+
+.container-fluid{
+    overflow-x: hidden;
+}
+
+.h-5em{
+    height: 5em;
+}
+.h-0{
+    height: 0;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+/* Fonts */
+
+.font-staat{
+    font-family: 'Staatliches', cursive;
+}
+
+.font-source{
+    font-family: 'Source Code Pro', monospace;
+}
+
+.font-weight-300{
+    font-weight: 300;
+}
+
+/* Main */
+
+.primary-heading{
+    letter-spacing: .5em;
+    font-size: 4vw;
+}
+
+.secondary-heading{
+    font-size: 2vw;
+}
+
+.first-col{
+    overflow: hidden;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 35%;
+}
+
+.first-col-image-wrapper{
+    overflow: hidden;
+    width: 70%;
+    float: left;
+}
+
+.first-col-image{
+    width: 120%;
+}
+
+#menu{
+    width: 30%;
+    margin-left: 70%;
+    background: #000;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu nav .menu-items .menu-item{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    display: block;
+    color: #fff;
+    text-decoration: none !important;
+}
+
+#menu nav .menu-items{
+    padding: 0;
+}
+
+#menu nav{
+    width: 100%;
+}
+
+.menu-item + .active{
+    background: #fff; 
+    color: #000 !important;
+}
+
+.menu-item:hover{
+    letter-spacing: 4px;
+}
+
+.second-col{
+    height: 100vh;
+    position: relative;
+    width: 65%;
+    margin-left: 40%;
+}
+
+.second-col-inner-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.spacer-top{
+    height: 0;
+}
+
+.spacer-bottom{
+    height: 5em;
+}
+
+.main-content{
+    min-height: 100vh;
+    position: relative;
+    width: 65%;
+    margin-left: 40%;
+}

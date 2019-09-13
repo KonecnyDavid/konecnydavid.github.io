@@ -9,9 +9,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#9f00a7">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000">
+    <meta name="msapplication-TileColor" content="#000">
+    <meta name="theme-color" content="#000">
 
     <!-- <meta property="og:image" content="http://example.com/url-obrazku.png">  TODO -->
     <meta property="og:title" content="David Konečný | Programátor a Developer">
@@ -24,332 +24,49 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Staatliches" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
     
     <title>David Konečný | Programátor a Developer</title>
     <meta name="description" content="Věnuji se tvorbě webových stránek a aplikací. Ovládám práci se Symfony, Asp.net core a Javascriptem.">
-    
-    <style>
-        /* Layout  */
-        
-        .container-fluid{
-            overflow-x: hidden;
-        }
-
-        .h-5em{
-            height: 5em;
-        }
-        .h-0{
-            height: 0;
-        }
-
-        ::-webkit-scrollbar{
-            display: none;
-        }
-
-
-        /* Fonts */
-
-        .font-staat{
-            font-family: 'Staatliches', cursive;
-        }
-
-        .font-source{
-            font-family: 'Source Code Pro', monospace;
-        }
-
-        .font-weight-300{
-            font-weight: 300;
-        }
-
-        /* Main */
-
-        .primary-heading{
-            letter-spacing: .5em;
-            font-size: 4vw;
-        }
-
-        .secondary-heading{
-            font-size: 2vw;
-        }
-
-        .first-col{
-            overflow: hidden;
-            height: 100vh;
-            position: relative;
-        }
-
-        .first-col-image{
-            width: 120%;
-        }
-
-        .second-col{
-            height: 100vh;
-            position: relative;
-        }
-
-        .second-col-inner-wrapper{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        .spacer-top{
-            height: 0;
-        }
-
-        .spacer-bottom{
-            height: 5em;
-        }
-
-        /* Skills */
-
-        .skill{
-            font-size: 3em;
-        }
-
-        #skills{
-            position: absolute; 
-            bottom: 0; 
-            left: 0; 
-            background-color: #000; 
-            height: 5em;
-            cursor: grab;
-            overflow: hidden;
-            overflow-y: scroll;
-        }
-
-        /* Info */
-        
-        #more{
-            padding-left: 5em;
-            padding-right: 5em;
-        }
-
-        #info{
-            display: none;
-        }
-
-        .info-child{
-            padding-left: 3rem;
-            padding-right: 3rem;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            width: 50%;
-        }
-
-        .info-inner-wrapper{
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .info-title{
-            font-size: 3rem;
-        }
-
-        .contact .contact-item a{
-            color: #fff;
-            padding-left: .5em;
-        }
-
-        .contact .contact-item{
-            font-size: 1rem;
-        }
-
-        .contact{
-            margin-top: 1em;
-            padding-left: 3rem;
-            padding-right: 3rem;
-        }
-
-
-        /* Animations */
-
-        .animation-up{
-            animation: up;
-            animation-duration: 1s;
-            animation-fill-mode: forwards;
-        }
-        .animation-down{
-            animation: down;
-            animation-duration: 1s;
-            animation-fill-mode: forwards;
-        }
-
-        @keyframes up{
-            from {height: 5em;}
-            to {height: 50vh;}
-        }
-
-        @keyframes down{
-            from {height: 50vh;}
-            to {height: 5em;}
-        }
-
-        /* Responsive */
-
-        @media only screen and (max-width: 600px) {
-            .primary-heading{
-                font-size: 7vw;       
-            }
-
-            .secondary-heading{
-                font-size: 4vw;
-            }
-            
-            .info-title{
-                font-size: 1.5rem;
-            }
-            
-            .info-child{
-                padding-left: .5rem;
-                padding-right: .5rem;
-            }
-            
-            @keyframes up{
-                from {height: 5em;}
-                to {height: 100vh;}
-            }
-
-            @keyframes down{
-                from {height: 100vh;}
-                to {height: 5em;}
-            }
-
-            .info-inner-wrapper{
-                flex-direction: column;
-            }
-
-            .info-child{
-                width: 100%;
-            }
-
-            .first-col{
-                height: 50vh;
-            }
-            .second-col{
-                height: 50vh;
-            }
-
-            .spacer-top{
-                height: 5em;
-            }
-
-            .second-col-inner-wrapper{
-                justify-content: start;
-            }
-        }
-
-    </style>
 </head>
   <body>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-md-4 px-0 first-col">
+        <div class="px-0 first-col">
+            <div class="first-col-image-wrapper">
                 <img class="first-col-image" src="/main.jpg" alt="David Konečný">
             </div>
-            <div class="col-12 col-md-8 second-col">
-                <div class="h-100 w-100 second-col-inner-wrapper">
-                    <div class="spacer-top"></div>
-                    <h1 class="font-staat font-weight-300 primary-heading">David Konečný</h1>
-                    <div class="border-bottom w-75 mt-3 mb-4"></div>
-                    <h2 class="font-source secondary-heading">Programátor a Developer</h2>    
-                    <div id="spacer" class="spacer-bottom"></div>
-                </div>
-                <div class="w-100 info" id="skills">
-                    <div class="d-flex justify-content-around align-items-center w-100 text-light h-5em">
-                        <span class="font-source h-100 d-flex align-items-center" id="more"><span>Více o mě</span></span>
+            <div id="menu">
+                <nav>
+                    <div class="menu-items font-staat">
+                        <a class="menu-item" href="#main">Úvod</a>
+                        <a class="menu-item" href="#experience">Zkušenosti</a>
+                        <a class="menu-item" href="#reference">Projekty</a>
+                        <a class="menu-item" href="#contact">Kontakt</a>
                     </div>
-                    <div id="info">
-                        <div class="info-inner-wrapper w-100 text-light">
-                            <div class="info-child">
-                                <h3 class="font-staat info-title">Co umím</h3>
-                                <ul class="font-source list-unstyled">
-                                    <li><span class="text-primary">Symfony</span> ovládám na pokročilé úrovni, jelikož jej používám při své každodenní práci.</li>
-                                    <li><span class="text-primary">Asp.net core</span> používáme na projektu Maturitní rozbory.</li>
-                                    <li><span class="text-primary">Javascript</span> se uplatní snad všude. Nyní se učím framework React.  </li>
-                                    <li><span class="text-primary">Html & Css</span> je samozdřejmostí. Umím taká jednotlivé knihovny jako jsou less a bootstrap.</li>
-                                </ul>
-                            </div>
-                            <div class="info-child">
-                                <h3 class="font-staat info-title">Moje projekty</h3>
-                                <ul class="font-source list-unstyled">
-                                    <li><a href="https://maturitnirozbory.cz">Maturitni Rozbory</a> je projekt na ucelenou sbírku rozborů děl k maturitě.</li>
-                                    <li><a href="https://github.com/TheCookieShows/SuperMegaUltraEasyCMS">SuperMegaUltraEasyCMS</a> je php framework na tvorbu webů.</li>
-                                    <li><a href="https://github.com/TheCookieShows/RequestParameterManager">Request Parameter Manager</a> je PHP balíček určený k objektově orientovanému přístupu k Request (post, get) parametrům.</li>
-                                    <li><a href="https://github.com/TheCookieShows/DoctrineSearch">Doctrine Search</a> je PHP knihovna na zjednodušení vyhledávání v doctrine entitách.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="info-inner-wrapper w-100 text-light contact">
-                            <div class="contact-item font-source"><i class="fa fa-phone"></i>+420 774 158 774</div>
-                            <div class="contact-item font-source"><i class="fa fa-envelope"></i><a href="mailto:david@konecny.eu">david@konecny.eu</a></div>
-                            <div class="contact-item font-source"><i class="fab fa-github"></i><a href="https://github.com/TheCookieShows">github.com/TheCookieShows</a></div>
-                            <div class="contact-item font-source"><i class="fab fa-bitbucket"></i><a href="https://bitbucket.org/davidkonecny">bitbucket.org/DavidKonecny</a></div>
-                            <div class="contact-item font-source"><i class="fab fa-facebook"></i><a href="https://www.facebook.com/dkonecn">facebook.com/DKonecn</a></div>
-                        </div>
-                    </div>
-                </div>
+                </nav>
+                
+            </div>
+        </div>
+        <div class="second-col" id="#main">
+            <div class="h-100 w-100 second-col-inner-wrapper">
+                <div class="spacer-top"></div>
+                <h1 class="font-staat font-weight-300 primary-heading">David Konečný</h1>
+                <div class="border-bottom w-75 mt-3 mb-4"></div>
+                <h2 class="font-source secondary-heading">Programátor a Developer</h2>    
+                <div id="spacer" class="spacer-bottom"></div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div id="#experience">
+            
+            </div>
+            <div id="#reference">
+            
+            </div>
+            <div id="#contact">
+            
             </div>
         </div>
     </div>
-    <script>
-        const more = document.getElementById("more");
-        const skills = document.getElementById("skills");
-        const spacer = document.getElementById("spacer");
-        const info = document.getElementById("info")
-
-        var state = {
-            showed: false
-        }
-
-        skills.onclick = (e) => {
-            if(!state.showed){
-                upFunc(e)
-            }
-            else if(more.contains(e.target)){
-                downFunc(e)
-            }
-        }
-
-        document.onclick = e => {
-            if(!skills.contains(e.target) && state.showed){
-                downFunc(e)
-            }
-        }
-
-        const downFunc = e => {
-            more.innerText = "Více o mě"
-
-            down(skills)
-            down(spacer)
-
-            info.style.display = "none";
-
-            state.showed = false
-        }
-        
-        const upFunc = e => {
-            more.innerText = "Méňe o mě"
-
-            up(skills);
-            up(spacer);
-
-            info.style.display = "block";
-
-            state.showed = true
-        }
-
-        var up = (element) => {
-            element.classList.remove("animation-down")
-            element.className += " animation-up";
-        }
-
-        var down = (element) => {
-            element.classList.remove("animation-up")
-            element.className += " animation-down";
-        }
-    </script>
   </body>
 </html>
