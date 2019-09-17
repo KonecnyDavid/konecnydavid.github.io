@@ -30,7 +30,7 @@
     <meta name="description" content="Věnuji se tvorbě webových stránek a aplikací. Ovládám práci se Symfony, Asp.net core a Javascriptem.">
 </head>
   <body>
-    <div class="container-fluid">
+    <div class="">
         <div class="px-0 first-col">
             <div class="first-col-image-wrapper">
                 <img class="first-col-image" src="/main.jpg" alt="David Konečný">
@@ -47,7 +47,7 @@
                 
             </div>
         </div>
-        <div class="second-col" id="#main">
+        <div class="second-col section" id="main">
             <div class="h-100 w-100 second-col-inner-wrapper">
                 <div class="spacer-top"></div>
                 <h1 class="font-staat font-weight-300 primary-heading">David Konečný</h1>
@@ -57,16 +57,24 @@
             </div>
         </div>
         <div class="main-content">
-            <div id="#experience">
+            <div id="experience" class="section">
+                <div class="section-header-right">
+                    <h2 class="font-staat">
+                        Zkušenosti
+                    </h2>
+                </div>
+                
+            </div>
+            <div id="reference" class="section">
             
             </div>
-            <div id="#reference">
-            
-            </div>
-            <div id="#contact">
+            <div id="contact" class="section">
             
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/gumshoe/dist/gumshoe.polyfills.min.js"></script>
+    <script src="/index.js"></script>
   </body>
 </html>

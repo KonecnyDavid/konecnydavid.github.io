@@ -56,7 +56,7 @@
 }
 
 .main-content {
-  min-height: 200vh;
+  min-height: 100vh;
   position: relative;
   width: 65%;
   margin-left: 35%;
@@ -65,15 +65,13 @@
 #experience {
   background-color: #000 !important;
   color: #fff;
-  min-height: 100vh;
+  min-height: 30vh;
 }
 
 .section-header-right {
   display: flex;
   justify-content: flex-end;
   padding: 3rem;
-}
-.section-header-right h2 {
   font-size: 4rem;
 }
 
@@ -128,4 +126,4 @@
   letter-spacing: 4px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=output.css.map */
