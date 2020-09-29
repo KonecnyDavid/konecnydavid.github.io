@@ -1,9 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -14,347 +13,30 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- <meta property="og:image" content="http://example.com/url-obrazku.png">  TODO -->
-    <meta property="og:title" content="David Konečný | Programátor a Developer">
-    <meta property="og:description" content="Věnuji se tvorbě webových stránek a aplikací. Ovládám práci se Symfony, Asp.net core a Javascriptem.">
-    <meta property="og:url" content="http://davidkonecny.eu/">
+    <meta property="og:title" content="David Konečný - React, Symfony & Python developer.">
+    <meta property="og:description" content="React, Symfony & Python developer.x">
+    <meta property="og:url" content="https://davidkonecny.eu/">
 
     <meta name="twitter:card" content="summary">
-
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="/style.css" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Staatliches" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    
-    <title>David Konečný | Programátor a Developer</title>
-    <meta name="description" content="Věnuji se tvorbě webových stránek a aplikací. Ovládám práci se Symfony, Asp.net core a Javascriptem.">
+    <title>David Konečný - React, Symfony & Python developer.</title>
+  </head>
 
-    <style>
-        /* Layout  */
-        
-        .container-fluid{
-            overflow-x: hidden;
-        }
-
-        .h-5em{
-            height: 5em;
-        }
-        .h-0{
-            height: 0;
-        }
-
-        ::-webkit-scrollbar{
-            display: none;
-        }
-
-
-        /* Fonts */
-
-        .font-staat{
-            font-family: 'Staatliches', cursive;
-        }
-
-        .font-source{
-            font-family: 'Source Code Pro', monospace;
-        }
-
-        .font-weight-300{
-            font-weight: 300;
-        }
-
-        /* Main */
-
-        .primary-heading{
-            letter-spacing: .5em;
-            font-size: 4vw;
-        }
-
-        .secondary-heading{
-            font-size: 2vw;
-        }
-
-        .first-col{
-            overflow: hidden;
-            height: 100vh;
-            position: relative;
-        }
-
-        .first-col-image{
-            width: 120%;
-        }
-
-        .second-col{
-            height: 100vh;
-            position: relative;
-        }
-
-        .second-col-inner-wrapper{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        .spacer-top{
-            height: 0;
-        }
-
-        .spacer-bottom{
-            height: 5em;
-        }
-
-        /* Skills */
-
-        .skill{
-            font-size: 3em;
-        }
-
-        #skills{
-            position: absolute; 
-            bottom: 0; 
-            left: 0; 
-            background-color: #000; 
-            height: 5em;
-            cursor: grab;
-            overflow: hidden;
-            overflow-y: scroll;
-        }
-
-        /* Info */
-        
-        #more {
-            background-color: #000;
-            transition: background-color .5s ease;
-        }
-
-        #more:hover{
-            background-color: #222;
-        }
-
-        #info{
-            display: none;
-        }
-
-        .info-child{
-            padding-left: 3rem;
-            padding-right: 3rem;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            width: 50%;
-        }
-
-        .info-inner-wrapper{
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .info-title{
-            font-size: 3rem;
-        }
-
-        .contact .contact-item a{
-            color: #fff;
-            padding-left: .5em;
-        }
-
-        .contact .contact-item{
-            font-size: 3rem;
-        }
-
-        .contact{
-            margin-top: 1em;
-            margin-bottom: 1em;
-            padding-left: 3rem;
-            padding-right: 3rem;
-        }
-
-
-        /* Animations */
-
-        .animation-up{
-            animation: up;
-            animation-duration: 1s;
-            animation-fill-mode: forwards;
-        }
-        .animation-down{
-            animation: down;
-            animation-duration: 1s;
-            animation-fill-mode: forwards;
-        }
-
-        @keyframes up{
-            from {height: 5em;}
-            to {height: 50vh;}
-        }
-
-        @keyframes down{
-            from {height: 50vh;}
-            to {height: 5em;}
-        }
-
-        /* Responsive */
-
-        @media only screen and (max-width: 600px) {
-            .primary-heading{
-                font-size: 7vw;       
-            }
-
-            .secondary-heading{
-                font-size: 4vw;
-            }
-            
-            .info-title{
-                font-size: 1.5rem;
-            }
-            
-            .info-child{
-                padding-left: .5rem;
-                padding-right: .5rem;
-            }
-            
-            @keyframes up{
-                from {height: 5em;}
-                to {height: 100vh;}
-            }
-
-            @keyframes down{
-                from {height: 100vh;}
-                to {height: 5em;}
-            }
-
-            .info-inner-wrapper{
-                flex-direction: column;
-            }
-
-            .info-child{
-                width: 100%;
-            }
-
-            .first-col{
-                height: 50vh;
-            }
-            .second-col{
-                height: 50vh;
-            }
-
-            .spacer-top{
-                height: 5em;
-            }
-
-            .second-col-inner-wrapper{
-                justify-content: start;
-            }
-        }
-
-    </style>
-</head>
   <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-md-4 px-0 first-col">
-                <img class="first-col-image" src="/main.jpg" alt="David Konečný">
-            </div>
-            <div class="col-12 col-md-8 second-col">
-                <div class="h-100 w-100 second-col-inner-wrapper">
-                    <div class="spacer-top"></div>
-                    <h1 class="font-staat font-weight-300 primary-heading">David Konečný</h1>
-                    <div class="border-bottom w-75 mt-3 mb-4"></div>
-                    <h2 class="font-source secondary-heading">Programátor a Designer</h2>    
-                    <div id="spacer" class="spacer-bottom"></div>
-                </div>
-                <div class="w-100 info" id="skills">
-                    <div class="d-flex justify-content-around align-items-center w-100 text-light h-5em" id="more">
-                        <span class="font-source h-100 d-flex align-items-center"><span>Více o mě</span></span>
-                    </div>
-                    <div id="info">
-                        <div class="info-inner-wrapper w-100 text-light">
-                            <div class="info-child">
-                                <h3 class="font-staat info-title">Co umím</h3>
-                                <ul class="font-source list-unstyled">
-                                    <li><span class="text-primary">Symfony</span> používám při své každodenní práci.</li>
-                                    <li><span class="text-primary">Python</span> používám na drobné skripty a aplikace</li>
-                                    <li><span class="text-primary">Javascript</span> se uplatní snad všude. Ovládám React a Electron.js.</li>
-                                    <li><span class="text-primary">Html & Css</span> je samozdřejmostí.</li>
-                                </ul>
-                            </div>
-                            <div class="info-child">
-                                <h3 class="font-staat info-title">Moje projekty</h3>
-                                <ul class="font-source list-unstyled">
-                                    <li><a href="http://maturitnirozbory.davidkonecny.eu">Maturitni Rozbory</a> - sbírka děl k maturitě.</li>
-                                    <li><a href="http://ttt.davidkonecny.eu">Tic tac toe</a> - peer to peer piškvorky.</li>
-                                    <li><a href="http://blablabot.davidkonecny.eu">Blablabot</a> - náhrada blabot.net.</li>
-                                    <li><a href="https://github.com/TheCookieShows/RequestParameterManager">Request Parameter Manager</a> - objektově orientované PHP get & post api.</li>
-                                    <li><a href="https://github.com/TheCookieShows/DoctrineSearch">Doctrine Search</a> - vyhledávání v doctrine entitách.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="info-inner-wrapper w-100 text-light contact">
-                            <div class="contact-item font-source"><a href="mailto:david@konecny.eu"><i class="fa fa-envelope"></i></a></div>
-                            <div class="contact-item font-source"><a href="https://github.com/KonecnyDavid"><i class="fab fa-github"></i></a></div>
-                            <div class="contact-item font-source"><a href="https://bitbucket.org/davidkonecny"><i class="fab fa-bitbucket"></i></a></div>
-                            <div class="contact-item font-source"><a href="https://www.facebook.com/dkonecn"><i class="fab fa-facebook"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="container">
+      <div class="content">
+        <div class="title">
+          <h1 id="name">DAVID</h1>
+          <h1 id="surname">KONECNY</h1>
         </div>
+        <p>React, Symfony & Python developer.</p>
+        <p>david@konecny.eu</p>
+      </div>
     </div>
-    <script>
-        const more = document.getElementById("more");
-        const skills = document.getElementById("skills");
-        const spacer = document.getElementById("spacer");
-        const info = document.getElementById("info")
-
-        var state = {
-            showed: false
-        }
-
-        skills.onclick = (e) => {
-            if(!state.showed){
-                upFunc(e)
-            }
-            else if(more.contains(e.target)){
-                downFunc(e)
-            }
-        }
-
-        document.onclick = e => {
-            if(!skills.contains(e.target) && state.showed){
-                downFunc(e)
-            }
-        }
-
-        const downFunc = e => {
-            more.innerText = "Více o mě"
-
-            down(skills)
-            down(spacer)
-
-            info.style.display = "none";
-
-            state.showed = false
-        }
-        
-        const upFunc = e => {
-            more.innerText = "Méňe o mě"
-
-            up(skills);
-            up(spacer);
-
-            info.style.display = "block";
-
-            state.showed = true
-        }
-
-        var up = (element) => {
-            element.classList.remove("animation-down")
-            element.className += " animation-up";
-        }
-
-        var down = (element) => {
-            element.classList.remove("animation-up")
-            element.className += " animation-down";
-        }
-    </script>
   </body>
 </html>
